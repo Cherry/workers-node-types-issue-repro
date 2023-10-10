@@ -2,7 +2,7 @@ export interface Env {}
 
 // This line triggers `@types/node` to be loaded
 // This is one example, but it's not uncommon for other packages to do this too.
-//import { neon } from '@neondatabase/serverless';
+import { neon } from '@neondatabase/serverless';
 
 export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
